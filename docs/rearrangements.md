@@ -16,7 +16,7 @@ The file should be encoded as ASCII or UTF-8. Everything is case-sensitive.
 
 **CSV dialect**
 
-The record separator is a newline `\n` and the field separator is a tab `\t`.
+The redord separator is a newline `\n` and the field separator is a tab `\t`.
 Fields or data should not be quoted. A header line with the columns names is
 always required.
 
@@ -82,7 +82,7 @@ rearrangements file.
 | --- | --- | --- | --- |
 | `id` | `string` |  mandatory  | Read/sequence identifier |
 | `sequence` | `string` |  mandatory  | Nucleotide sequence (e.g., the "read" sequence; revcomp'd if necessary) |
-| `primary` | `boolean` |  mandatory  | This record contains the primary VDJ alignments for this read/sequence |
+| `aln_rank` | `string` |  | This field records the "rank" of each of the alignments (in cases where multiple V, D, or J alignments are reported). For the "primary" alignment record, the value of the field should be `aln1`.  The "secondary" record (for next-best alignments) should be marked `aln2`, and so on (`alnN`). We use a specific string so that primary (`aln1`) or secondary (`aln2`) records can be easily filtered (e.g., using `grep`). |
 | `sample` | `string` |  mandatory  | The biological sample this read derives from (e.g., from BioSample database) |
 | `constant` | `string` |  mandatory  | Constant region gene (e.g., IGHG4, IGHA2, IGHE, TRBC) |
 | `functional` | `boolean` |  mandatory  | VDJ sequence is predicted to be functional |

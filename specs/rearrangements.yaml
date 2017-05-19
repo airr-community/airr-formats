@@ -14,9 +14,15 @@ fields:
     doc: Nucleotide sequence (e.g., the "read" sequence; revcomp'd if
          necessary)
   -
-    name: primary
-    type: boolean
-    doc: This record contains the primary VDJ alignments for this read/sequence
+    name: aln_rank
+    type: string
+    doc: This field records the "rank" of each of the alignments (in cases
+         where multiple V, D, or J alignments are reported). For the "primary"
+         alignment record, the value of the field should be `aln1`.  The
+         "secondary" record (for next-best alignments) should be marked `aln2`,
+         and so on (`alnN`). We use a specific string so that primary (`aln1`)
+         or secondary (`aln2`) records can be easily filtered (e.g., using
+         `grep`).
   -
     name: sample_id
     type: string
