@@ -2,7 +2,7 @@
 AIRR community formats for adaptive immune receptor data.
 """
 
-from setuptools import setup
+from setuptools import setup, find_packages
 import versioneer
 
 
@@ -24,7 +24,7 @@ setup(name='airr-formats',
       keywords=('AIRR bioinformatics immunoglobulin antibody adaptive immune '
                 'lymphocyte sequencing TCR CDR3'),
       install_requires=['pyyaml', 'prov'],
-      packages=['airr'],
+      packages=find_packages(),
       package_data={'airr': ['specs/*.yaml']},
       classifiers=['Intended Audience :: Science/Research',
                    'Natural Language :: English',

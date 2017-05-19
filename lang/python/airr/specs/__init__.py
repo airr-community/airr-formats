@@ -18,3 +18,5 @@ for yaml_file in specs_files:
 # export the specs as top-level module variables
 for name in specs.keys():
     globals()[name] = specs[name]
+
+__all__ = list(specs.keys())
