@@ -1,0 +1,23 @@
+Study:
+   type: object
+   properties:
+      project:
+         type: string
+      project_title:
+         type: string
+      project_type:
+         type: string
+      membership_criteria:
+         type: string
+      grants:
+         type: string
+      biomaterial_provider:
+         type: string
+      collected_by:
+         type: string
+      library_name:
+         type: string
+      contact:
+         type: string
+      pubs_ids:
+         type: string

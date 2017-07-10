@@ -1,0 +1,27 @@
+Subject:
+   type: object
+   properties:
+      isolate:
+         type: string
+      organism:
+         type: string
+      sex:
+         type: string
+      age:
+         type: string
+      age_event:
+         type: string
+      ancestry_population:
+         type: string
+      ethnicity:
+         type: string
+      race:
+         type: string
+      species_name:
+         type: string
+      strain_name:
+         type: string
+      isolate_link:
+         type: string
+      link_type:
+         type: string

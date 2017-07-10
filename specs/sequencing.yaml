@@ -1,0 +1,19 @@
+Sequencing:
+   type: object
+   properties:
+       total_reads_passing_qc_filter:
+         type: string
+       protocol:
+         type: string
+       platform:
+         type: string
+       read_length:
+         type: string
+       sequencing_facility:
+         type: string
+       batch_number:
+         type: string
+       sequencing_run_date:
+         type: string
+       sequencing_kit:
+         type: string

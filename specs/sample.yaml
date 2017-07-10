@@ -1,0 +1,17 @@
+Sample:
+   type: object
+   properties:
+       biological_sample_id:
+         type: string
+       sample_type:
+         type: string
+       tissue:
+         type: string
+       disease_state_sample:
+         type: string
+       collection_date:
+         type: string
+       collection_time_event:
+         type: string
+       source_commercial:
+         type: string

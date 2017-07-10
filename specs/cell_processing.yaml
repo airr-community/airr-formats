@@ -1,0 +1,23 @@
+Cell Processing:
+   type: object
+   properties:
+       tissue_processing:
+         type: string
+       cell_subset:
+         type: string
+       cell_subset_phenotype:
+         type: string
+       single_bulk:
+         type: string
+       cell_number:
+         type: string
+       cells_per_reaction:
+         type: string
+       cell_storage:
+         type: string
+       cell_quality:
+         type: string
+       cell_isolation:
+         type: string
+       processing_protocol:
+         type: string
