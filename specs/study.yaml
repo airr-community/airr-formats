@@ -7,7 +7,7 @@ Study:
          type: string
       project_type:
          type: string
-      membership_criteria:
+      exclusion_criteria:
          type: string
       grants:
          type: string
@@ -15,7 +15,7 @@ Study:
          type: string
       collected_by:
          type: string
-      library_name:
+      uploaded_by:
          type: string
       contact:
          type: string

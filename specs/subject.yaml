@@ -1,7 +1,7 @@
 Subject:
    type: object
    properties:
-      isolate:
+      subject_id:
          type: string
       organism:
          type: string
@@ -21,6 +21,8 @@ Subject:
          type: string
       strain_name:
          type: string
+      tax_id:
+         type: integer
       isolate_link:
          type: string
       link_type:

@@ -7,7 +7,7 @@ Cell Processing:
          type: string
        cell_subset_phenotype:
          type: string
-       single_bulk:
+       sample_type:
          type: string
        cell_number:
          type: string
