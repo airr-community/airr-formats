@@ -1,0 +1,19 @@
+Diagnosis:
+   type: object
+   properties:
+      study_group_description:
+         type: string
+      diagnosis:
+         type: string
+      disease_length:
+         type: string
+      disease_stage:
+         type: string
+      prior_therapies:
+         type: string
+      immunogen:
+         type: string
+      intervention:
+         type: string
+      pmhx:
+         type: string

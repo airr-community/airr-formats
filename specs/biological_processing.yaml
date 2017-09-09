@@ -1,0 +1,6 @@
+Biological Processing:
+   type: object
+   allOf:
+      $ref: ./cell_processing.yaml
+      $ref: ./na_processing.yaml
+      $ref: ./sequencing.yaml

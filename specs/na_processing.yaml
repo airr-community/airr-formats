@@ -1,0 +1,23 @@
+Nucleic Acid Processing:
+   type: object
+   properties:
+       library_source:
+         type: string
+       target_substrate_quality:
+         type: string
+       library_strategy:
+         type: string
+       library_construction_protocol:
+         type: string
+       target_locus_PCR:
+         type: string
+       forward_PCR_primer_target_location:
+         type: string
+       reverse_PCR_primer_target_location:
+         type: string
+       whole_vs_partial sequences:
+         type: string
+       heavy_light_paired:
+         type: string
+       ng_template:
+         type: string

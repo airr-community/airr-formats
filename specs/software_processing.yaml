@@ -1,0 +1,15 @@
+Software Processing:
+   type: object
+   properties:
+      software_versions:
+         type: string
+      paired_reads_assembly:
+         type: string
+      quality_thresholds:
+         type: string
+      primer_match_cutoffs:
+         type: string
+      collapsing method:
+         type: string
+      data_processing_protocols:
+         type: string
