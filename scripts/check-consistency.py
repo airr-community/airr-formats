@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import sys
 from glob import glob
@@ -22,15 +22,15 @@ doc_files = {basename(f): f for f in glob('docs/*.md')}
 
 if set(spec_files.keys()) != set(py_files.keys()):
     for spec in set(spec_files.keys()) - set(py_files.keys()):
-        print(f'{spec} missing from python package', file=sys.stderr)
+        print('{} missing from python package'.format(spec), file=sys.stderr)
     for spec in set(py_files.keys()) - set(spec_files.keys()):
-        print(f'{spec} found in python package but missing from specs/', file=sys.stderr)
+        print('{} found in python package but missing from specs/'.format(spec), file=sys.stderr)
     sys.exit(1)
 
 
 if len(set(spec_files.keys()) - set(doc_files.keys())) > 0:
     for spec in set(spec_files.keys()) - set(doc_files.keys()):
-        print(f'{spec} missing from rendered doc files', file=sys.stderr)
+        print('{} missing from rendered doc files'.format(spec), file=sys.stderr)
     sys.exit(1)
 
 
@@ -42,7 +42,7 @@ for spec_name in spec_files:
         py_spec = yaml.load(ip)
 
     if jsondiff.diff(gold_spec, py_spec) != {}:
-        print(f'{spec_name} spec is different from python version', file=sys.stderr)
+        print('{} spec is different from python version'.format(spec_name), file=sys.stderr)
         print(jsondiff.diff(gold_spec, py_spec), file=sys.stderr)
         sys.exit(1)
 
@@ -53,5 +53,5 @@ for spec_name in spec_files:
         doc_contents = ip.read().strip()
 
     if template.render(gold_spec) != doc_contents:
-        print(f'rendered doc for {spec_name} does not correspond to spec')
+        print('rendered doc for {} does not correspond to spec'.format(spec_name))
         sys.exit(1)
