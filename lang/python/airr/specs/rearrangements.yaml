@@ -60,11 +60,21 @@ fields:
          residues; i.e., IMGT's JUNCTION)
     mandatory: True
   -
+    name: junction_nt_length
+    type: integer
+    doc: Number of junction nucleotides in sequence_vdj
+    mandatory: True
+  -
     name: junction_aa
     type: string
     doc: Amino acid sequence of the junction region (CDR3 plus conserved
          residues; i.e., IMGT's JUNCTION)
     mandatory: True
+  -
+    name: junction_aa_length
+    type: integer
+    doc: Number of junction amino acids in sequence_vdj
+    mandatory: False
   -
     name: v_score
     type: float
