@@ -7,7 +7,7 @@ import os.path as osp
 import yaml
 import jinja2
 import jsondiff
-
+import difflib
 
 # function to extract name from file
 basename = lambda f: osp.splitext(osp.basename(f))[0]
@@ -53,5 +53,9 @@ for spec_name in spec_files:
         doc_contents = ip.read().strip()
 
     if template.render(gold_spec) != doc_contents:
+        doc_lines = doc_contents.splitlines()
+        gold_lines = template.render(gold_spec).splitlines()
+        diff = difflib.unified_diff(doc_lines, gold_lines)
         print('rendered doc for {} does not correspond to spec'.format(spec_name))
+        print('\n'.join(diff))
         sys.exit(1)
