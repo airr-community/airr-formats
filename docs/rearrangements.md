@@ -26,7 +26,9 @@ exclude them.
 | `j_call` | `string` |  mandatory  | J allele assignment |
 | `c_call` | `string` |  mandatory  | C gene assignment (e.g., IGHG4, IGHA2, IGHE, TRBC) |
 | `junction_nt` | `string` |  mandatory  | Nucleotide sequence of the junction region (CDR3 plus conserved residues; i.e., IMGT's JUNCTION) |
+| `junction_nt_length` | `integer` |  | Number of junction nucleotides in sequence_vdj |
 | `junction_aa` | `string` |  mandatory  | Amino acid sequence of the junction region (CDR3 plus conserved residues; i.e., IMGT's JUNCTION) |
+| `junction_aa_length` | `integer` |  | Number of junction amino acids in sequence_vdj |
 | `v_score` | `float` |  mandatory  | V alignment score |
 | `d_score` | `float` |  mandatory  | D alignment score |
 | `j_score` | `float` |  mandatory  | J alignment score |
@@ -71,7 +73,6 @@ exclude them.
 | `cdr3_end` | `integer` |  | CDR3 end coord in sequence; excludes J-TRP or J-PHE (transferred from germline) |
 | `fwr4_start` | `integer` |  | FWR3 start coord in sequence (transferred from germline) |
 | `fwr4_end` | `integer` |  | FWR4 end coord in sequence (transferred from germline) |
-| `junction_length` | `integer` |  | Number of junction nucleotides in sequence_vdj |
 | `np1_length` | `integer` |  | Number of of nucleotides between sample V and D sequences |
 | `np2_length` | `integer` |  | Number of of nucleotides between sample D and J sequences |
 | `n1_length` | `integer` |  | Nucleotides 5' of the D-segment |
