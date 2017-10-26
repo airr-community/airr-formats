@@ -26,7 +26,7 @@ exclude them.
 | `j_call` | `string` |  mandatory  | J allele assignment |
 | `c_call` | `string` |  mandatory  | C gene assignment (e.g., IGHG4, IGHA2, IGHE, TRBC) |
 | `junction_nt` | `string` |  mandatory  | Nucleotide sequence of the junction region (CDR3 plus conserved residues; i.e., IMGT's JUNCTION) |
-| `junction_nt_length` | `integer` |  | Number of junction nucleotides in sequence_vdj |
+| `junction_nt_length` | `integer` |  mandatory  | Number of junction nucleotides in sequence_vdj |
 | `junction_aa` | `string` |  mandatory  | Amino acid sequence of the junction region (CDR3 plus conserved residues; i.e., IMGT's JUNCTION) |
 | `junction_aa_length` | `integer` |  | Number of junction amino acids in sequence_vdj |
 | `v_score` | `float` |  mandatory  | V alignment score |
