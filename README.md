@@ -1,3 +1,6 @@
+**This work has moved to the [airr-standards](https://github.com/airr-community/airr-standards) repository.**
+
+
 # airr-formats
 
 [![Build Status](https://travis-ci.org/airr-community/airr-formats.svg?branch=master)](https://travis-ci.org/airr-community/airr-formats)
